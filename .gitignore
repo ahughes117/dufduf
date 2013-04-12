@@ -5,3 +5,4 @@
 *.war
 *.ear
 /dufduf/nbproject/private/
+/dufduf/build/
