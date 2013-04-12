@@ -31,14 +31,17 @@ public class Main {
 
             f.find(lists, dir);
 
+            int ctr = 0;
             for (List<String> list : lists.values()) {
                 if (list.size() > 1) {
                     System.out.println("--");
                     for (String file : list) {
                         System.out.println(file);
                     }
+                    ctr++;
                 }
             }
+            System.out.println("Duplicate Files Found: " + ctr);
         } catch (NoSuchAlgorithmException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
